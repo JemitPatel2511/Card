@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insta ex1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+            font-size: 1.6rem;
+            color: #333;
+            background-color: #eee;
+        }
+
+        .card{
+            background-color: #fff;
+            box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .025);
+        }
+
+        .card_publication{
+            position: relative;
+            height: 20rem;
+            overflow: hidden;
+        }
+
+        .card_publication img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s;
+        }
+
+        .card:hover .card_publication img{
+            transform: scale(1.5);
+        }
+
+        .card_publication>div {
+            background-color: linear-gradient(to right bottom,
+            rgba(255, 119, 48, 8), rgba(255,185,0,.8));
+            font-size: 1.4rem;
+            color: #fff;
+            position: absolute;
+            inset: 0;
+            font-weight: bold;
+        }
+
+        .card_publication i{
+            margin-right: 1rem;
+        }
+        .card_publication span{
+            display: block;
+        }
+
+        .card__author{
+            margin-bottom: .5rem;
+        }
+
+        .card_info{
+            position: relative;
+            padding: 2rem 3rem;
+        }
+
+        .card__title{
+            font-size: 3rem;
+        }
+
+        .card__subtitle{
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #a2a2a2;
+            margin-bottom: 1rem;
+        }
+
+        .card__cta{
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ff7730;
+            margin-top: 2rem;
+
+        }
+
+        .card__cta span{
+            display: inherit;
+            transition: transform .5s;
+        }
+
+        .card__cta:hover span{
+            transform: translateX(.5rem);
+        }
+
+        @media screen and (min-width: 37.5rem){
+            .card{
+                display: grid;
+                grid-auto-flow: column;
+                max-width: 75rem;
+            }
+
+            .card_publication{
+                width: 25rem;
+                height: initial;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="card">
+        <div class="card_publication">
+<img src="Image/Cool-Laptop-Background-Latest-768x432.jpg" alt="">
+        <div>
+        <span class="card__author">
+            <i class="ri-user-line"></i>
+        </span>
+        <span class="card_date">
+            <i class="ri-calender-line"></i>
+        </span>
+        </div>
+        </div>
+        <div class="card_info">
+            <h2 class="card__title">Jemit Patel</h2>
+            <span class="card__subtitle">UI/UX Devloper</span>
+            <p class="card__description">Hey My Name is Jemit Patel. I am Live in Vadodara.
+                My Cource is UI/UX Devloper.Hey My Name is Jemit Patel. I am Live in Vadodara.
+                My Cource is UI/UX Devloper.Hey My Name is Jemit Patel. I am Live in Vadodara.
+                My Cource is UI/UX Devloper.Hey My Name is Jemit Patel. I am Live in Vadodara.
+                My Cource is UI/UX Devloper.Hey My Name is Jemit Patel. I am Live in Vadodara.
+                My Cource is UI/UX Devloper.
+            </p>
+            <a href="#" class="card__cta">
+                Ream More <span>&rarr;</span>
+            </a>
+        </div>
+        
+    </article>
+
+
+
+    
+</body>
+</html>
